@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: "Times New Roman", Times, serif;
+            background: linear-gradient(135deg, #ff8da1);
+            padding: 30px;
+        }
+
+        .atas{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .profil img{
+            width: 420px;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .biodata{
+            color: #050505;
+        }
+
+        .biodata h1{
+            font-size: 70px;
+            font-weight: lighter;
+            margin-bottom: 25px;
+        }
+
+        .biodata p{
+            font-family: Arial;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+
+        .bawah{
+            display: flex;
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .kiri{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .kanan{
+            flex: 1.4;
+        }
+
+        .box{
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        .box h2{
+            color: #d63384;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .box p{
+            font-family: Arial;
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .box:hover{
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-family: Arial;
+        }
+
+        form label{
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea{
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        textarea{
+            resize: none;
+        }
+
+        .radio,
+        .checkbox{
+            font-size: 16px;
+            line-height: 2;
+        }
+
+        button{
+            background: #d63384;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover{
+            background: #c2186a;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="atas">
+
+        <div class="profil">
+            <img src="ipoo.jpeg" alt="Foto Profil">
+        </div>
+
+        <div class="biodata">
+
+            <h1>Biodata</h1>
+
+            <p><b>Nama:</b> Rifa Mawaddah Alamsyah</p>
+            <p><b>Tempat, Tanggal Lahir:</b> Pandajaya, 02 April 2006</p>
+            <p><b>Alamat:</b> Pandayora</p>
+            <p><b>Jenis Kelamin:</b> Perempuan</p>
+            <p><b>Umur:</b> 20 Tahun</p>
+            <p><b>Agama:</b> Islam</p>
+            <p><b>Email:</b> rifamawaddah29@gmail.com</p>
+            <p><b>Tinggi Badan:</b> 148 cm</p>
+            <p><b>Berat Badan:</b> 37 kg</p>
+
+            <p>
+                Saya adalah seorang pelajar yang aktif dan suka belajar hal baru.
+                Saya memiliki minat dalam dunia teknologi dan pengembangan diri.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="bawah">
+
+        <!-- KIRI -->
+        <div class="kiri">
+
+            <div class="box">
+                <h2>Hobi</h2>
+
+                <p>Bulu Tangkis</p>
+                <p>Volly</p>
+                <p>Menyanyi</p>
+                <p>memasak</p>
+                <p>menari</p>
+            </div>
+
+            <div class="box">
+                <h2>Media Sosial</h2>
+
+                <p>Instagram: rifamawaddah_02</p>
+                <p>TikTok: cyx_rfa2</p>
+            </div>
+
+            <div class="box">
+                <h2>Favorit</h2>
+
+                <p>Makanan: Masakan Mama</p>
+                <p>Minuman: Cimory Hazelnut</p>
+                <p>Warna: Pink</p>
+                <p>Musik: Indie Pop</p>
+                <p>Drama: Korea</p>
+                <p>Hewan: kucing</p>
+                <p>Buku: Rumah Untuk Alie</p>
+            </div>
+
+        </div>
+
+        <div class="kanan">
+
+            <div class="box">
+
+                <h2>Formulir Mahasiswa</h2>
+
+                <form>
+
+                    <label>Nama Lengkap</label>
+                    <input type="text" placeholder="Masukkan nama lengkap">
+
+                    <label>NIM</label>
+                    <input type="number" placeholder="Masukkan NIM">
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Masukkan email">
+
+                    <label>Jenis Kelamin</label>
+
+                    <div class="radio">
+                        <input type="radio" name="jk"> Laki-laki
+                        <input type="radio" name="jk"> Perempuan
+                    </div>
+
+                    <label>Hobi</label>
+
+                    <div class="checkbox">
+                        <input type="checkbox"> Journaling <br>
+                        <input type="checkbox"> Menyanyi <br>
+                        <input type="checkbox"> Olahraga
+                    </div>
+
+                    <label>Alamat</label>
+
+                    <textarea rows="5" placeholder="Masukkan alamat"></textarea>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
